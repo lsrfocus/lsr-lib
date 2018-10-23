@@ -16,10 +16,17 @@
     "type": "git",
     "url": "git+https://github.com/lsrfocus/lsr-lib.git"
   },
+  "files": [
+    "src",
+    "lib"
+  ],
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "test": "jest"
+  },
+  "peerDependencies": {
+    "react": ">=15"
   },
   "devDependencies": {
     "@babel/core": "7.1.2",
