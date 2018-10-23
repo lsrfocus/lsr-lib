@@ -1,8 +1,5 @@
 {
   "version": "0.0.0",
-  "packages": [
-    "packages/*"
-  ],
   "command": {
     "init": {
       "exact": true
@@ -11,5 +8,6 @@
       "message": ":gem: %s"
     }
   },
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }
