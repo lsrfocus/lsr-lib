@@ -11,11 +11,5 @@
     "flow-bin": "0.83.0",
     "flow-typed": "2.5.1",
     "lerna": "3.4.3"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }
