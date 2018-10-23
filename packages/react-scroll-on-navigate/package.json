@@ -1,0 +1,35 @@
+{
+  "name": "react-scroll-on-navigate",
+  "version": "0.0.0",
+  "description": "Scroll to top automatically on navigate.",
+  "keywords": [
+    "react",
+    "window",
+    "scroll",
+    "top",
+    "router",
+    "reset"
+  ],
+  "author": "Kevin Cooper <cooperka92@gmail.com>",
+  "homepage": "https://github.com/lsrfocus/lsr-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsrfocus/lsr-lib.git"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "react": "16.5.2",
+    "react-test-renderer": "16.5.2"
+  }
+}
