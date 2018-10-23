@@ -2,6 +2,8 @@
 
 Lerna repo for simple common components.
 
+See the [lsr-lib](/packages/lsr-lib/) directory for the package that's published to npm.
+
 ## Development
 
 This mono-repo is managed by [Lerna](https://github.com/lerna/lerna).
