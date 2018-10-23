@@ -20,15 +20,19 @@
     "src",
     "lib"
   ],
-  "main": "lib/index.js",
+  "main": "lib/component.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf lib",
+    "build": "yarn run clean && babel src --out-dir lib --ignore src/**/*.test.js --ignore src/**/__snapshots__",
+    "prepublish": "yarn run build"
   },
   "peerDependencies": {
     "react": ">=15"
   },
   "devDependencies": {
+    "@babel/cli": "7.1.2",
     "@babel/core": "7.1.2",
     "@babel/preset-env": "7.1.0",
     "@babel/preset-flow": "7.0.0",
