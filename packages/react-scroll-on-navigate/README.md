@@ -7,11 +7,27 @@ See the [React Router guide](https://github.com/ReactTraining/react-router/blob/
 
 ## Usage
 
+Manually, passing in your router's `location` prop:
+
 ```jsx
-import ScrollToTopOnNavigate from 'react-scroll-on-navigate';
+import { ScrollToTopOnNavigate } from 'react-scroll-on-navigate';
 
 <div className="MyApp">
   <ScrollToTopOnNavigate location={location} />
+  ...
+</div>
+```
+
+Or, using a decorator if you prefer:
+
+```jsx
+import { ScrollToTopOnNavigate as ScrollToTopWithoutRouter } from 'lsr-lib';
+import { withRouter } from 'react-router';
+
+const ScrollToTopOnNavigate = withRouter(ScrollToTopWithoutRouter);
+
+<div className="MyApp">
+  <ScrollToTopOnNavigate />
   ...
 </div>
 ```
