@@ -19,7 +19,8 @@
   "scripts": {
     "test": "jest",
     "clean": "rm -rf lib",
-    "build": "yarn run clean && babel src --out-dir lib --ignore src/**/*.test.js --ignore src/**/__snapshots__",
+    "generateIndex": "babel-node scripts/generateIndex.js",
+    "build": "yarn run clean && yarn run generateIndex && babel src --out-dir lib --ignore src/**/*.test.js --ignore src/**/__snapshots__",
     "prepublish": "yarn run build"
   },
   "dependencies": {
@@ -28,13 +29,17 @@
   "devDependencies": {
     "@babel/cli": "7.1.2",
     "@babel/core": "7.1.2",
+    "@babel/node": "7.0.0",
     "@babel/preset-env": "7.1.0",
     "@babel/preset-flow": "7.0.0",
     "@babel/preset-react": "7.0.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.6.0",
+    "immutable": "3.8.2",
     "jest": "23.6.0",
+    "lodash": "4.17.11",
     "react": "16.5.2",
-    "react-test-renderer": "16.5.2"
+    "react-test-renderer": "16.5.2",
+    "write": "1.0.3"
   }
 }
