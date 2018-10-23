@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-on-navigate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Scroll to top automatically on navigate.",
   "keywords": [
     "react",
