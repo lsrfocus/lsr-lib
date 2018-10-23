@@ -5,6 +5,7 @@ node_modules/
 coverage/
 
 # Build artifacts.
+lib/
 build/
 dist/
 tmp/
