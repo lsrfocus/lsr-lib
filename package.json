@@ -2,11 +2,16 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "flow": "flow"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-flow": "6.23.0",
+    "flow-bin": "0.83.0",
+    "flow-typed": "2.5.1",
     "lerna": "3.4.3"
   }
 }
