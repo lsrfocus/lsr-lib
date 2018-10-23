@@ -1,1 +1,1 @@
-export * from 'react-scroll-on-navigate';
+export { ScrollToTopOnNavigate } from 'react-scroll-on-navigate';
