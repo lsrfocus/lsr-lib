@@ -1,11 +1,11 @@
 {
-  "version": "0.0.0",
+  "version": "independent",
   "command": {
     "init": {
       "exact": true
     },
     "publish": {
-      "message": ":gem: %s"
+      "message": ":gem: Publish (see details)"
     }
   },
   "npmClient": "yarn",
