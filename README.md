@@ -13,3 +13,10 @@ mean that installing anywhere will install and link the entire project automatic
 You only need to install once, from the root.
 
 See the app-specific subfolders for more detailed information about running each app.
+
+### Getting started
+
+```bash
+yarn install
+yarn run lerna bootstrap
+```

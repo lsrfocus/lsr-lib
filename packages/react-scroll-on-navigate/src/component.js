@@ -22,4 +22,5 @@ class ScrollToTopOnNavigate extends Component<Props> {
 
 }
 
+export { ScrollToTopOnNavigate };
 export default ScrollToTopOnNavigate;

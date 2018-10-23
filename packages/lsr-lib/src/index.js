@@ -1,1 +1,1 @@
-export default true;
+export * from 'react-scroll-on-navigate';
