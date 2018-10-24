@@ -1,5 +1,7 @@
 # LSR Lib
 
+[![Build status](https://travis-ci.org/lsrfocus/lsr-lib.svg?branch=master)](https://travis-ci.org/lsrfocus/lsr-lib)
+
 Lerna repo for simple common components.
 
 See the [lsr-lib](/packages/lsr-lib/) directory for the package that's published to npm.
