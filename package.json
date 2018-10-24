@@ -2,7 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "flow": "flow"
+    "lint": "lerna run lint --stream",
+    "flow": "flow",
+    "test": "lerna run test --stream",
+    "clean": "lerna run clean --stream"
   },
   "workspaces": [
     "packages/*"
