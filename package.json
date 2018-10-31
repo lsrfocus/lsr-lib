@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "prepublish": "lerna run prepublish --stream",
+    "watch": "lerna run watch --stream --no-sort",
     "lint": "lerna run lint --stream",
     "flow": "flow",
     "test": "lerna run test --stream",

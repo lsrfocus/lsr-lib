@@ -19,6 +19,7 @@
     "clean": "rm -rf lib",
     "generateIndex": "babel-node scripts/generateIndex.js",
     "build": "yarn run clean && yarn run generateIndex && babel src --out-dir lib --ignore src/**/*.test.js --ignore src/**/__snapshots__",
+    "watch": "yarn run build --watch",
     "prepublish": "yarn run build"
   },
   "dependencies": {

@@ -24,6 +24,14 @@ Link everything together automatically:
 yarn install
 ```
 
+### Development
+
+To compile continuously while developing:
+
+```bash
+yarn run watch
+```
+
 ### Publishing
 
 Prompt for new version numbers of all modified libs and publish all to npm:
