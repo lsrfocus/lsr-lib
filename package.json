@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "prepublish": "lerna run prepublish --stream",
     "lint": "lerna run lint --stream",
     "flow": "flow",
     "test": "lerna run test --stream",

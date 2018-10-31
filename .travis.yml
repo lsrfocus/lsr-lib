@@ -6,7 +6,6 @@ node_js:
 cache: yarn
 
 script:
- - yarn run lerna bootstrap
  - yarn run lint
  - yarn run flow
  - yarn test

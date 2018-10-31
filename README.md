@@ -18,16 +18,15 @@ See the app-specific subfolders for more detailed information about running each
 
 ### Getting started
 
-Link everything together:
+Link everything together automatically:
 
 ```bash
 yarn install
-yarn run lerna bootstrap
 ```
 
 ### Publishing
 
-The following will prompt for new versions of all modified libs and publish all to npm:
+Prompt for new version numbers of all modified libs and publish all to npm:
 
 ```bash
 yarn run lerna publish
