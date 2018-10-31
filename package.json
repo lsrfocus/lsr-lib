@@ -14,8 +14,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "flow-bin": "0.83.0",
-    "flow-typed": "2.5.1",
     "lerna": "3.4.3"
   }
 }
