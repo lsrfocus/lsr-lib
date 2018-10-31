@@ -12,10 +12,8 @@
   ],
   "author": "Kevin Cooper <cooperka92@gmail.com>",
   "homepage": "https://github.com/lsrfocus/lsr-lib",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lsrfocus/lsr-lib.git"
-  },
+  "repository": "github:lsrfocus/lsr-lib",
+  "bugs": "https://github.com/lsrfocus/lsr-lib/issues",
   "files": [
     "src",
     "lib"
