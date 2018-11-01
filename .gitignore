@@ -11,6 +11,7 @@ dist/
 tmp/
 out/
 .firebase/
+packages/*/src/**/*.js
 
 # Various metadata.
 .DS_Store

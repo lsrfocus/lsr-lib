@@ -8,7 +8,7 @@
     "flow": "flow",
     "test": "lerna run test --stream",
     "clean": "lerna run clean --stream",
-    "clean:hard": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/lib"
+    "clean:deps": "rm -rf node_modules && rm -rf packages/*/node_modules"
   },
   "workspaces": [
     "packages/*"

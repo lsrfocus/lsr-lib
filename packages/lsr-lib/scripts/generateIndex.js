@@ -30,5 +30,5 @@ const glob = util.promisify(sadGlob);
 
   const content = `// AUTO-GENERATED, DO NOT EDIT.\n\n${exportContent}\n`;
 
-  await writeFile('src/index.js', content);
+  await writeFile('src/index.ts', content);
 })();

@@ -7,13 +7,13 @@
     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "module": "commonjs",
     /* Specify library files to be included in the compilation. */
-    //"lib": [],
+    "lib": ["es5", "es6", "dom"],
     /* Allow javascript files to be compiled. */
     // "allowJs": true,
     /* Report errors in .js files. */
     //"checkJs": true,
     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-    //"jsx": "preserve",
+    "jsx": "react",
     /* Generates corresponding '.d.ts' file. */
     //"declaration": true,
     /* Generates a sourcemap for each corresponding '.d.ts' file. */
@@ -78,7 +78,7 @@
     /* List of root folders whose combined content represents the structure of the project at runtime. */
     //"rootDirs": [],
     /* List of folders to include type definitions from. */
-    //"typeRoots": [],
+    "typeRoots": ["../../node_modules/@types", "../../shared/types"],
     /* Type declaration files to be included in compilation. */
     //"types": [],
     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */

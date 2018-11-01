@@ -1,8 +1,8 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
-type Props = {
+interface Props {
   location: Object,
-};
+}
 
 class ScrollToTopOnNavigate extends Component<Props> {
 
