@@ -21,7 +21,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "clean": "true",
+    "clean": "rimraf src/**/*.js",
     "build": "yarn run clean && tsc",
     "watch": "yarn run build --watch",
     "prepublish": "yarn run build"

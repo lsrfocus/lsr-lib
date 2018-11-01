@@ -16,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "clean": "true",
+    "clean": "rimraf src/**/*.js",
     "build:scripts": "babel-node scripts/generateIndex.js --presets '@babel/preset-env'",
     "build": "yarn run clean && yarn run build:scripts && tsc",
     "watch": "yarn run build --watch",

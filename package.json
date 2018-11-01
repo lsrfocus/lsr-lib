@@ -8,12 +8,13 @@
     "flow": "flow",
     "test": "lerna run test --stream",
     "clean": "lerna run clean --stream",
-    "clean:deps": "rm -rf node_modules && rm -rf packages/*/node_modules"
+    "clean:deps": "rimraf **/node_modules"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "3.4.3"
+    "lerna": "3.4.3",
+    "rimraf": "2.6.2"
   }
 }
