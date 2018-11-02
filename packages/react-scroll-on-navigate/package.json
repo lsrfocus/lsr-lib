@@ -20,7 +20,6 @@
   "main": "src/component.js",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write src/**/*.{ts,tsx}",
     "test": "jest",
     "clean": "rimraf src/**/*.js",
     "build": "yarn run clean && tsc",
@@ -35,7 +34,6 @@
     "@types/react": "16.4.18",
     "@types/react-test-renderer": "16.0.3",
     "jest": "23.6.0",
-    "prettier": "1.14.3",
     "react": "16.5.2",
     "react-test-renderer": "16.5.2",
     "ts-jest": "23.10.4",
