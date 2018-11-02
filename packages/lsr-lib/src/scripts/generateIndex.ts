@@ -20,8 +20,9 @@ const glob = util.promisify(sadGlob);
     // @ts-ignore
     .delete('lsr-lib')
     .reduce(
-      (reduction: PackageNameMap, packageName: string) => reduction.set(packageName, null),
-      Immutable.Map()
+      (reduction: PackageNameMap, packageName: string) =>
+        reduction.set(packageName, null),
+      Immutable.Map(),
     )
     .map((dummy: PackageNameMap, packageName: string) => {
       const lib = require(packageName);
@@ -30,8 +31,10 @@ const glob = util.promisify(sadGlob);
     });
 
   const exportContent = packagesToExport
-    .map((exports: PackageExports = Immutable.Set(), packageName: string = '') =>
-      `export { ${exports.join(', ')} } from '${packageName}';`)
+    .map(
+      (exports: PackageExports = Immutable.Set(), packageName: string = '') =>
+        `export { ${exports.join(', ')} } from '${packageName}';`,
+    )
     .join('\n');
 
   const content = `// AUTO-GENERATED, DO NOT EDIT.\n\n${exportContent}\n`;

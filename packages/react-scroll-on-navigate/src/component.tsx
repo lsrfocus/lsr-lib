@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
 interface Props {
-  location: Object,
+  location: Object;
 }
 
 class ScrollToTopOnNavigate extends Component<Props> {
-
   componentDidUpdate(prevProps: Props) {
     const { location } = this.props;
 
@@ -17,7 +16,6 @@ class ScrollToTopOnNavigate extends Component<Props> {
   render() {
     return null;
   }
-
 }
 
 export { ScrollToTopOnNavigate };

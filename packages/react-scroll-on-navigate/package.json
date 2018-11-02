@@ -20,7 +20,7 @@
   "main": "src/component.js",
   "license": "MIT",
   "scripts": {
-    "format": "prettier src/**/*.{ts,tsx}",
+    "format": "prettier --write src/**/*.{ts,tsx}",
     "test": "jest",
     "clean": "rimraf src/**/*.js",
     "build": "yarn run clean && tsc",
