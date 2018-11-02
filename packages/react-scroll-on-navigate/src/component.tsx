@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 interface Props {
+  // ESLint support for TS interfaces is still lacking...
+  // eslint-disable-next-line no-restricted-globals
   location: Object;
 }
 

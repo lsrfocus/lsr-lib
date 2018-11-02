@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 import util from 'util';
 import path from 'path';
 import sadGlob from 'glob';
@@ -25,6 +27,7 @@ const glob = util.promisify(sadGlob);
       Immutable.Map(),
     )
     .map((dummy: PackageNameMap, packageName: string) => {
+      // eslint-disable-next-line import/no-dynamic-require, global-require
       const lib = require(packageName);
       const exports = _.keys(lib);
       return Immutable.Set(exports).delete('default');
