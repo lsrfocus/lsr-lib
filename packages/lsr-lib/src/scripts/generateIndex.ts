@@ -27,7 +27,7 @@ const glob = util.promisify(sadGlob);
       Immutable.Map(),
     )
     .map((dummy: PackageNameMap, packageName: string) => {
-      // eslint-disable-next-line import/no-dynamic-require, global-require
+      // eslint-disable-next-line typescript/no-var-requires, import/no-dynamic-require, global-require
       const lib = require(packageName);
       const exports = _.keys(lib);
       return Immutable.Set(exports).delete('default');
@@ -35,7 +35,7 @@ const glob = util.promisify(sadGlob);
 
   const exportContent = packagesToExport
     .map(
-      (exports: PackageExports = Immutable.Set(), packageName: string = '') =>
+      (exports: PackageExports = Immutable.Set(), packageName = '') =>
         `export { ${exports.join(', ')} } from '${packageName}';`,
     )
     .join('\n');
