@@ -1,5 +1,9 @@
 {
-  "extends": "cooperka/react",
+  "extends": [
+    "cooperka/react",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
 
   "parser": "typescript-eslint-parser",
 
