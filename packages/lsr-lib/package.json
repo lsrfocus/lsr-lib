@@ -17,7 +17,7 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf src/**/*.js",
-    "build:scripts": "babel-node scripts/generateIndex.js --presets '@babel/preset-env'",
+    "build:scripts": "babel-node src/scripts/generateIndex.ts --extensions '.ts' --presets '@babel/preset-env,@babel/preset-typescript'",
     "build": "yarn run clean && yarn run build:scripts && tsc",
     "watch": "yarn run build --watch",
     "prepublish": "yarn run build"
@@ -29,6 +29,7 @@
     "@babel/core": "7.1.2",
     "@babel/node": "7.0.0",
     "@babel/preset-env": "7.1.0",
+    "@babel/preset-typescript": "7.1.0",
     "@types/glob": "7.1.1",
     "@types/immutable": "3.8.7",
     "@types/jest": "23.3.9",
